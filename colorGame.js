@@ -1,18 +1,18 @@
-const Square = () => {
+const Square = (props) => {
   return (
-    <button></button>
+    <button>{props.id}</button>
   )
 }
 const Board = () => {
   const [player, setPlayer] = React.useState(1);
   let status = `Player ${player}`;
   function renderSquare(i) {
-    return <Square></Square>;
+    return <Square id={i}></Square>;
   }
   return (
     <div className="game-board">
       <div className="grid-row">        
-        {renderSquare(0)}
+        {renderSquare(0)}{renderSquare(1)}{renderSquare(2)}
       </div>
       <div id="info">
         <h1>{status}</h1>

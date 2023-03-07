@@ -1,6 +1,6 @@
-const Square = (props) => {
+const Square = ({id}) => {
   return (
-    <button>{props.id}</button>
+    <button>{id}</button>
   )
 }
 const Board = () => {

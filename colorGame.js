@@ -1,6 +1,12 @@
 const Square = ({id}) => {
   return (
-    <button>{id}</button>
+    // change color of Square on click
+    <button onClick={e => {
+      e.target.style.background = "red";
+    }}
+    >
+      <h1>{id}</h1>
+    </button>
   )
 }
 const Board = () => {

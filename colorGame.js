@@ -1,23 +1,18 @@
+// const Square = () => {
+//   return (
+//     <button></button>
+//   )
+// }
 const Board = () => {
-  const [player, setPlayer] = React.useState(0);
-  // let player = 1;
-
+  const [player, setPlayer] = React.useState(1);
   let status = `Player ${player}`;
+  function renderSquare(i) {
+    return <Square></Square>;
+  }
   return (
-    <div
-      className="game-board"
-      onClick={(e) => {
-        setPlayer((player + 1)%2);
-        /**
-         * React didn't re-render
-         * because we need to keep state in a special way in our component
-         */
-        // player = player + 1;  
-        status = `Player ${player}`;
-        e.target.style.background = "red";
-        e.target.style.width = 400;
-      }}
-    >
+    <div className="game-board">
+      <div className="grid-row">        
+      </div>
       <div id="info">
         <h1>{status}</h1>
       </div>

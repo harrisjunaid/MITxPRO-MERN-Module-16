@@ -3,7 +3,15 @@
 
 ## About The Project
     
-###  Parent State Forces Re-Render
+</br>
+
+### 16-11  Track Re-render With UseEffect
+Track when React is re-rendering with the useEffect Hook.
+Re-render is triggered when useState is changed.
+
+</br>
+
+###  16-10 Parent State Forces Re-Render
 Force a child re-render from the parent component.
 A change in parent's state is triggering a change in the state of the child (square components).
   
@@ -15,7 +23,7 @@ A change in parent's state is triggering a change in the state of the child (squ
 
 </br>
 
-https://classroom.emeritus.org/courses/1173/pages/video-16-10-3-28-parent-state-forces-re-render?module_item_id=290821
+https://classroom.emeritus.org/courses/1173/pages/video-16-11-5-49-track-re-render-with-useeffect?module_item_id=290824
 </br>
 
 ### React Component Lifecycle

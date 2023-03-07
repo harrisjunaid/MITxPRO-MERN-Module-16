@@ -1,10 +1,14 @@
 const Square = ({id, player}) => {
+  // const [color, setColor] = React.useState(2);
+  const [color, setColor] = React.useState('green');
+
   const palet = ['red', 'blue', 'green'];
   const getRandomColor = () => palet[Math.floor(Math.random()*3)];
   return (
     // change color of Square on click
     <button onClick={e => {
-      e.target.style.background = getRandomColor();
+      setColor(getRandomColor());
+      e.target.style.background = color;
     }}
     >
       <h1>{id}</h1>

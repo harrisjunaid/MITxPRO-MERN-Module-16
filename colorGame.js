@@ -1,8 +1,10 @@
-const Square = ({id}) => {
+const Square = ({id, player}) => {
+  const palet = ['red', 'blue', 'green'];
+  const getRandomColor = () => palet[Math.floor(Math.random()*3)];
   return (
     // change color of Square on click
     <button onClick={e => {
-      e.target.style.background = "red";
+      e.target.style.background = getRandomColor();
     }}
     >
       <h1>{id}</h1>
@@ -30,5 +32,8 @@ const Board = () => {
 // ========================================
 
 ReactDOM.render(<Board />, document.getElementById("root"));
+
+
+
 
 

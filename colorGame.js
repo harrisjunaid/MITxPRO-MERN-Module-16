@@ -1,4 +1,4 @@
-const Square = ({id, player, setPlayer}) => {
+const Square = ({id, player, newState, setPlayer}) => {
   // const [color, setColor] = React.useState(2);
   const [color, setColor] = React.useState('green');
 
@@ -12,9 +12,13 @@ const Square = ({id, player, setPlayer}) => {
   return (
     // change color of Square on click
     <button onClick={(e) => {
+      let col = getRandomColor();
+      setColor(col);
       // alert(`I'm Square ${id}`)
-      // setPlayer((player+1)%2)
-      e.target.style.backgroundColor = getRandomColor();
+      setPlayer((player+1)%2)
+      // e.target.style.backgroundColor = color;
+      e.target.style.backgroundColor = col;
+
     }}>
       <h1>{id}</h1>
     </button>

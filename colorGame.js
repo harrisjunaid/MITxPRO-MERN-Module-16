@@ -18,6 +18,7 @@ const Square = ({id, player, newState, setPlayer}) => {
       setPlayer((player+1)%2)
       // e.target.style.backgroundColor = color;
       e.target.style.backgroundColor = col;
+      newState({id:id, color:col});
 
     }}>
       <h1>{id}</h1>
@@ -28,13 +29,20 @@ const Board = () => {
   const [player, setPlayer] = React.useState(1);
   const [mounted, setMounted] = React.useState(true);
   const [random, setRandom] = React.useState(0);
+  const [state, setState] = React.useState([]);
 
   let status = `Player ${player}`;
   const reRender = () => setRandom(Math.random())
   const toggle = () => setMounted(!mounted);
+  const newState = (ob) => {
+    setState([...state, ob]);
+    console.log(`adding state ${JSON.stringify(ob)}`)
+    console.log(`state array ${JSON.stringify(state)}`)
+
+  }
   function renderSquare(i) {
     // console.log(`Square ${i} rendered`);
-    return <Square id={i} player={player} setPlayer={setPlayer}></Square>;
+    return <Square id={i} player={player} newState={newState} setPlayer={setPlayer}></Square>;
   }
   return (
     <div className="game-board">

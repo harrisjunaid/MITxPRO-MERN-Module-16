@@ -9,6 +9,8 @@
 Track when React is re-rendering with the useEffect Hook.
 Re-render is triggered when useState is changed.
 
+React doesn't re-render if we we update directly into the DOM. The Re-render is triggered when we change useState. 
+
 </br>
 
 ###  16-10 Parent State Forces Re-Render

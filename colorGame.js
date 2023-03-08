@@ -12,9 +12,9 @@ const Square = ({id, player, setPlayer}) => {
   return (
     // change color of Square on click
     <button onClick={(e) => {
-      alert(`I'm Square ${id}`)
-      setPlayer((player+1)%2)
-      e.target.style.backgroundColor=palet[Math.floor(Math.random()*3)]
+      // alert(`I'm Square ${id}`)
+      // setPlayer((player+1)%2)
+      e.target.style.backgroundColor = getRandomColor();
     }}>
       <h1>{id}</h1>
     </button>

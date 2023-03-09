@@ -5,6 +5,32 @@
     
 </br>
 
+### 16-15  Passing Player From Parent To Child
+
+`<Board/>` Tracking:
+
+    - Who has clicked where on board.
+        - Array of nine values with 0 or 1.
+    - Whose turn is it to play.
+        - Players: 0 or 1.
+    - Communicate both to <Square/>
+
+`<Square/>` Tracking:
+
+    - Keep track of mark.
+        - "O", "X", NULL
+    - Keep track of color.
+
+Winning Condition:
+
+    Looping through winning conditions array of 8 possibilities and checking if player's state[i] match all elements in tested winning combination.
+
+</br>
+
+![Alt text](assets/16-15_TicTacToe.drawio.svg)
+
+</br>
+
 ### 16-14  Passing Player From Parent To Child
 
 Now, you’ll learn how to set the player and pass the next player from the board to the square components through newState. 

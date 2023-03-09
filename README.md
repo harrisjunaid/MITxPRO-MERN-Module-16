@@ -5,6 +5,23 @@
     
 </br>
 
+### 16-14  Passing Player From Parent To Child
+
+Now, you’ll learn how to set the player and pass the next player from the board to the square components through newState. 
+
+After completing this, review the code. Are there other ways you could implement this functionality?
+
+![](./assets/16-14%20Parent%20To%20Child%20%26%20Child%20To%20Parent.svg)
+
+</br>
+
+### 16-13  Tracking Total Game State
+
+Now, you’ll track the state of the square components at the board level. This'll allow you to track the total game state. Here, you’ll pass state from child to parent using the callback function newState.
+
+
+</br>
+
 ### 16-12  UseState Delay
 useState `setter method` is asynchronous. As a result, if the `state variable` is called right after its setter method, it has not yet been updated.
 

@@ -106,10 +106,12 @@ const Square = ({ takeTurn, id }) => {
 };
 
 const Board = () => {
-  // 1st player is X ie 1
+  const [player, setPlayer] = React.useState(1);   // 1st player is X ie 1
+  
   // State keeps track of next player and gameState
-  const [player, setPlayer] = React.useState(1);
   const [gameState, setGameState] = React.useState([]);
+  // const [gameState, setGameState] = React.useState(Array(9).fill(null));
+
   console.log("gameState:", gameState);
   // check for winner (see superset.js)
   let status = `Winner is:  ${checkForWinner(gameState)}`;

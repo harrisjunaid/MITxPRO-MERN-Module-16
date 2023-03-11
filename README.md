@@ -11,6 +11,7 @@
 
 ![Alt text](assets/16-15_tracking-state.drawio.svg)
 
+#### Detailed Flowchart
 
 ![Alt text](assets/Copy%20of%2016-15%20Tic-Tac-Toe.svg)
 

@@ -1,5 +1,5 @@
 const Board = () => {
-  const [player, setPlayer] = React.useState(0);
+  const [player, setPlayer] = React.useState(1);
   // let player = 1;
 
   let status = `Player ${player}`;

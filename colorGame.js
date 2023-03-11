@@ -1,19 +1,18 @@
 const Board = () => {
-  const [player, setPlayer] = React.useState(0);
-  // let player = 1;
+  let player = 1;
 
   let status = `Player ${player}`;
   return (
     <div
       className="game-board"
       onClick={(e) => {
-        setPlayer(player + 1);
         /**
          * React didn't re-render
          * because we need to keep state in a special way in our component
          */
-        // player = player + 1;  
+        player = player + 1;  
         status = `Player ${player}`;
+        console.log(status);
       }}
     >
       <div id="info">

@@ -14,6 +14,7 @@ const Board = () => {
          */
         // player = player + 1;  
         status = `Player ${player}`;
+        console.log(status);
       }}
     >
       <div id="info">

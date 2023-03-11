@@ -7,6 +7,8 @@
 
 ### 16-3_b    Generate Players On The Tic-Tac-Toe Board
 
+React re-renders when state is managed through useState hook.
+
 - Starter code for the Tic-Tac-Toe board.
 - Set the state of the board component so it can keep track of players.
 
@@ -15,6 +17,8 @@
 
 ### 16-3_a    Generate Players On The Tic-Tac-Toe Board
 
+
+React didn't re-render because we need to keep state in a special way in our component.
 
 - Starter code for the Tic-Tac-Toe board.
 - Set the state of the board component so it can keep track of players.

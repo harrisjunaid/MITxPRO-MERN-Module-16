@@ -6,8 +6,12 @@ const Square = ({id, player}) => {
   const getRandomColor = () => palet[Math.floor(Math.random()*3)];
   return (
     // change color of Square on click
-    <button onClick={() => alert(`I'm Square ${id}`)}>
-      <h1>{player}</h1>
+    <button onClick={(e) => {
+      console.log(e);
+      alert(`I'm Square ${id}`);
+      e.target.style.backgroundColor=getRandomColor();
+    }}>
+      <h1>{id}</h1>
     </button>
   )
 }

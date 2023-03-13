@@ -7,7 +7,7 @@ const Square = ({id, player}) => {
   return (
     // change color of Square on click
     <button onClick={() => alert(`I'm Square ${id}`)}>
-      <h1>{player}</h1>
+      <h1>{id}</h1>
     </button>
   )
 }

@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/51511122/224479798-9bb9594a-7347-462b-
 
 ## License
 
-Distributed under the MIT License. See `LICENSE-MIT.txt` for more information.
+Distributed under the MIT License. See `LICENSE.lic` for more information.
 
 
 

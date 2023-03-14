@@ -53,14 +53,10 @@ A change in parent's state is triggering a change in the state of the child (squ
   
 </br>
 
-### 
 
-![Alt text](./assets/game.drawio.svg)
 
-</br>
 
-https://classroom.emeritus.org/courses/1173/pages/video-16-12-3-47-usestate-delay?module_item_id=290826
-</br>
+
 
 ### React Component Lifecycle
 

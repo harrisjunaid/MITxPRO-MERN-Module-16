@@ -82,7 +82,16 @@ https://classroom.emeritus.org/courses/1173/pages/video-16-12-3-47-usestate-dela
 - HTML
 - React
 
+<br/>
+
+### Roadmap of Future Improvements
+    1 Implementation of a reset button.
+        - Game Hard Reset clearing all game states.
+    2 Consider a winner from Best of Three Matches
+        - Board keeps track of wins from consecutive three  games and declares a winner scoring two wins out of three games.
+
+
 ## License
 
-Distributed under the MIT License. See `LICENSE-MIT.txt` for more information.
+Distributed under the MIT License. See `LICENSE.lic` for more information.
 
